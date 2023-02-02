@@ -1,0 +1,9 @@
+.TitleAndIcon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.TitleAndIcon button {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}

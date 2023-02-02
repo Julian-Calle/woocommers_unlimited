@@ -1,0 +1,140 @@
+.subscriptionForm {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* overflow: auto;
+  height: 100%; */
+}
+.subscriptionForm input {
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inputContainer label {
+  color: white;
+}
+.formError {
+  color: red;
+}
+
+.suscribeDynamicOptions {
+  width: 20vw;
+  min-width: 5rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.btn-38,
+.btn-38 *,
+.btn-38 :after,
+.btn-38 :before,
+.btn-38:after,
+.btn-38:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-38 {
+  -webkit-tap-highlight-color: red;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 0.05;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-38:disabled {
+  cursor: default;
+}
+.btn-38:-moz-focusring {
+  outline: auto;
+}
+
+.btn-38 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1rem 0.5rem;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+.btn-38 .new,
+.btn-38 .old span {
+  font-weight: 900;
+  transition: transform 0.2s;
+}
+.btn-38 .new {
+  display: block;
+  transform: scale(0);
+}
+.btn-38:hover .new {
+  transform: scale(1);
+}
+.btn-38 .old,
+.btn-38 .old span {
+  inset: 0;
+  position: absolute;
+}
+.btn-38 .old span {
+  background: #fff;
+  color: #000;
+  display: block;
+  display: grid;
+  place-items: center;
+}
+.btn-38 .old span:first-child {
+  -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+  clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+}
+.btn-38 .old span:nth-child(2) {
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.btn-38:hover .old span:first-child {
+  transform: translateX(-100%);
+}
+.btn-38:hover .old span:nth-child(2) {
+  transform: translateX(100%);
+}
+
+.dataGridWorkshop {
+  height: 100%;
+  width: 30%;
+  max-width: 29rem;
+  min-width: 20rem;
+  max-height: 26rem;
+}
+.dataGridWorkshop h2 {
+  color: white;
+  padding-top: 1rem;
+}
+.workshopListSection {
+  /* margin-top: 1rem; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem 1rem;
+  /* overflow: scroll; */
+  /* align-content: space-between; */
+}

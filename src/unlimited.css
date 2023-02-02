@@ -1,0 +1,114 @@
+/*******-*****/
+/** GENERAL **/
+/*************/
+
+.containerTittle {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: auto;
+}
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.main {
+  flex-grow: 2;
+}
+.linksContainer a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 5px;
+  margin: 0.5rem;
+}
+
+.linksContainer a:active {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  background-color: var(--brigth);
+  transition: all 0.5s 0s;
+}
+
+.linksContainer a:hover {
+  border-bottom: 3px solid red;
+  padding-bottom: 2px;
+  background-color: transparent;
+  background-color: var(--brigth);
+  transition: all 0.5s 0s;
+}
+
+.sectionContainer {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: auto;
+}
+
+/**************/
+/*** Tables ***/
+/**************/
+
+.dataGridContainer {
+  height: 100%;
+  max-height: 80vh;
+  width: 95%;
+}
+.MuiSvgIcon-fontSizeSmall {
+  color: white;
+}
+.MuiDataGrid-columnHeaderTitleContainer,
+.MuiDataGrid-cell {
+  color: white;
+}
+
+.MuiDataGrid-root input {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+}
+.MuiDataGrid-cellContent {
+  text-align: left;
+  font-weight: 200;
+}
+.MuiDataGrid-columnHeaderTitleContainer {
+  justify-content: center;
+}
+
+div.MuiDataGrid-columnHeaderTitle.css-1jbbcbn-MuiDataGrid-columnHeaderTitle {
+  font-weight: 900;
+}
+
+div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+  color: white;
+}
+
+.btn_icon {
+  font-size: 1.3rem;
+  border-radius: 25px;
+  padding: 0.3rem;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.btn_icon button {
+  border-radius: 25px;
+}
