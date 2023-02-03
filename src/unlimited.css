@@ -130,14 +130,14 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
 }
 
 .MuiToolbar-root {
-  /* background-color: black; */
+  background-color: black;
 }
 .MuiDataGrid-footerContainer {
-  color: blue;
+  /* color: black; */
   /* background-color: black; */
 }
 .dataGridContainer {
-  /* background-color: black; */
+  background-color: black;
 }
 
 .imgFooter {
