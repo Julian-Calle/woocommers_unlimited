@@ -5,19 +5,17 @@ export default function LoginForm({ submitAction, cancelAction }) {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log({ data });
     submitAction(data.password);
-    // reset();
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="loginForm">
       <div className="inputContainerloginForm">
         <input
+          type={"password"}
           placeholder="    password"
           {...register("password", { required: true })}
         />

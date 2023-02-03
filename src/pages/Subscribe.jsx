@@ -32,9 +32,6 @@ export function Subscribe() {
         block3: [],
       }
     );
-    console.log("cargoooooo las opciones");
-    console.log({ list });
-    console.log({ list1: list.block1 });
     setWorkshopsOptions(list);
     setLoadState(false);
   };
@@ -86,113 +83,8 @@ export function Subscribe() {
 
   return (
     <section className="sectionContainer">
-      <h1 className="containerTittle">Inscribir</h1>
+      {/* <h1 className="containerTittle">Inscribir</h1> */}
       <SubscriptionForm sendAction={onSubmit} options={workshopsOptions} />
-      {/* <form onSubmit={handleSubmit(onSubmit)} className="subscriptionForm">
-        <section className="infoForm">
-          <div className="inputContainer">
-            <label htmlFor="name">Nombre</label>
-            <input
-              placeholder="    Nombre"
-              {...register("name", { required: true })}
-            />
-            {errors.name && (
-              <span className="formError">Nombre es obligatorio</span>
-            )}
-          </div>
-          <div className="inputContainer">
-            <label htmlFor="surname">Apellido</label>
-            <input
-              placeholder="    Apellido"
-              {...register("surname", { required: true })}
-            />
-            {errors.surname && (
-              <span className="formError">Apellido es obligatorio</span>
-            )}
-          </div>
-          <div className="inputContainer">
-            <label htmlFor="email">Correo</label>
-            <input
-              placeholder="    Correo"
-              {...register("email", { required: true })}
-            />
-            {errors.email && (
-              <span className="formError">Correo es obligatorio</span>
-            )}
-          </div>
-          <div className="inputContainer">
-            <label htmlFor="Cantidad">Cantidad</label>
-            <select
-              className="suscribeDynamicOptions"
-              {...register("payment")}
-              defaultValue="seleccionar"
-            >
-              <option value="null" disabled>
-                Selecciona
-              </option>
-              <option value="0">0</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-              <option value="20">20</option>
-              <option value="25">25</option>
-            </select>
-            {errors.payment && (
-              <span className="formError">Cantidad es obligatorio</span>
-            )}
-          </div>
-        </section>
-        <section className="optionsForm">
-          <div className="inputContainer">
-            <label htmlFor="block1">Taller 1</label>
-            <select
-              className="suscribeDynamicOptions"
-              {...register("block1")}
-              defaultValue="seleccionar"
-            >
-              <option value="null" disabled>
-                Selecciona
-              </option>
-              <option value="">Ninguno</option>
-              <DynamicOptions options={workshopsOptions?.block1} />
-            </select>
-          </div>
-          <div className="inputContainer">
-            <label htmlFor="block2">Taller 2</label>
-            <select
-              className="suscribeDynamicOptions"
-              {...register("block2")}
-              defaultValue="seleccionar"
-            >
-              <option value="null" disabled>
-                Selecciona
-              </option>
-              <option value="">Ninguno</option>
-              <DynamicOptions options={workshopsOptions?.block2} />
-            </select>
-          </div>
-          <div className="inputContainer">
-            <label htmlFor="block3">Taller 3</label>
-            <select
-              className="suscribeDynamicOptions"
-              {...register("block3")}
-              defaultValue="seleccionar"
-            >
-              <option value="null" disabled>
-                Selecciona
-              </option>
-              <option value="">Ninguno</option>
-              <DynamicOptions options={workshopsOptions?.block3} />
-            </select>
-          </div>
-        </section>
-        <button className="btn-38 ">
-          <span className="new"> Clic para aceptar </span>
-          <div className="old">
-            <span>Añadir</span>
-            <span>Añadir</span>
-          </div>
-        </button>
-      </form> */}
       <section className="workshopListSection">
         <div className="dataGridWorkshop">
           <h2>BLOQUE 1</h2>

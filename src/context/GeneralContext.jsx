@@ -5,16 +5,9 @@ export const generalContext = React.createContext();
 const GeneralContextProvider = generalContext.Provider;
 
 export function GeneralProvider({ children }) {
-  //*******************************************************************************************************/
-  //****************************************Router style Manager//****************************************/
-  //*****************************************************************************************************/
-
-  //In this section is the information to change headers styling after clic
-  //in one on the differents options in differents headers
-
-  //********************/
-  //****Main header****/
-  //******************/
+  //******************************/
+  //****Columns configurarion****/
+  //****************************/
   const basicColumnsInfo = [
     { field: "name", headerName: "Nombre", minWidth: 100, flex: 0.5 },
     { field: "surname", headerName: "Apellido", minWidth: 100, flex: 0.5 },
@@ -39,9 +32,7 @@ export function GeneralProvider({ children }) {
 
   const loadTable = async () => {
     const tab = "global";
-    console.log("getDataFromTab");
     const spreadSheetRows = await getDataFromTab(tab);
-    console.log({ spreadSheetRows });
     setOrderList(spreadSheetRows);
   };
 

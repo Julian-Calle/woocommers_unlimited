@@ -1,5 +1,6 @@
 import Rodal from "rodal";
 import "rodal/lib/rodal.css";
+import "../CSS/modal.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 // width
 // height
@@ -37,7 +38,6 @@ export default function Modal({
   border = true,
   showCloseButton = false,
   clickOutsideModal = false,
-  height,
 }) {
   const size400 = useMediaQuery("(min-width:400px)");
   const size500 = useMediaQuery("(min-width:500px)");

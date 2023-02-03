@@ -2,15 +2,25 @@
 /** GENERAL **/
 /*************/
 
+@font-face {
+  font-family: "dirtyline";
+  src: url(assets/dirtyline.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+
 .containerTittle {
   font-size: 2rem;
   padding: 0.5rem 0;
   color: white;
+  font-family: dirtyline;
+  font-weight: 100;
 }
 
 .App {
   text-align: center;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #1264da;
   height: 100vh;
   min-height: 100vh;
   display: flex;
@@ -30,7 +40,7 @@
   flex-grow: 2;
 }
 .linksContainer a {
-  color: white;
+  color: black;
   text-decoration: none;
   background-color: transparent;
   padding: 5px;
@@ -108,7 +118,35 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
   position: absolute;
   right: 3px;
   top: 3px;
+  color: #1264da;
+  border: 2px solid #fde219;
 }
 .btn_icon button {
   border-radius: 25px;
+}
+
+.MuiDataGrid-main {
+  background-color: black;
+}
+
+.MuiToolbar-root {
+  background-color: black;
+}
+.MuiDataGrid-footerContainer {
+  color: blue;
+  background-color: black;
+}
+.dataGridContainer {
+  background-color: black;
+}
+
+.imgFooter {
+  border-radius: 25px;
+  width: 15rem;
+}
+.imgUmlimited {
+  width: 3rem;
+  position: absolute;
+  right: -1px;
+  top: 2px;
 }

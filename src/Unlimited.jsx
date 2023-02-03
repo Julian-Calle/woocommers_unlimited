@@ -7,11 +7,11 @@ import { Subscribe } from "./pages/Subscribe";
 import ButtonIcon from "./components/ButtonIcon";
 import Login from "./pages/Login";
 import AdminRoute from "./guards/AdminRoute";
-import { AuthProvider } from "./context/AuthContext";
 import useAuth from "./hooks/useAuth";
 import ShowToAdmin from "./guards/ShowToAdmin";
 import ShowTNotLogged from "./guards/ShowTNotLogged";
-// import React, { useEffect, useState, useRef } from "react";
+import footer from "./assets/footer.png";
+import unlimitedLogo from "./assets/unlimitedLogo.png";
 
 export default function Unlimited() {
   const { signOut, signIn } = useAuth();
@@ -28,14 +28,21 @@ export default function Unlimited() {
           <NavLink exact="true" to="/suscribe">
             Inscribir
           </NavLink>
-          {/* <NavLink exact="true" to="/login">
-            login
-          </NavLink> */}
           <ButtonIcon icon={"sign-out"} cls="icon" action={signOut} />
         </ShowToAdmin>
         <ShowTNotLogged>
-          <ButtonIcon icon={"sign-in"} cls="icon" action={signIn} />
+          <div>
+            <img
+              onClick={signIn}
+              className="imgUmlimited"
+              src={unlimitedLogo}
+              alt="unlimitedLogo"
+            />
+          </div>
         </ShowTNotLogged>
+      </div>
+      <div className="footer">
+        <img className="imgFooter" src={footer} alt={"logo"} />
       </div>
       <section className="main">
         <Routes>
@@ -44,7 +51,6 @@ export default function Unlimited() {
             <Route exact="true" path="/suscribe" element={<Subscribe />} />
           </Route>
           <Route exact="true" path="/" element={<WorkShops />} />
-          {/* <Route exact="true" path="/details" element={<GeneralInfo />} /> */}
           <Route exact="true" path="/login" element={<Login />} />
         </Routes>
       </section>

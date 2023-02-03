@@ -5,14 +5,21 @@ import * as _ from "lodash";
 import { addDataToTab, deleteAllDataFromTab } from "../utils/spreadSheetCalls";
 import "../CSS/generalInfo.css";
 import useGeneralContext from "../hooks/useGeneralContext";
+import BasicInfoModal from "../components/BasicInfoModal";
+import Modal from "../components/Modal";
 export default function GeneralInfo() {
+  const showDetails = (e) => {
+    setModalContent(e.row);
+    setActiveModal(true);
+  };
   const { fullColumnsInfo, orderList, loadTable } = useGeneralContext();
   const runUniqueUseEffect = useRef(true);
   const [loadState, setLoadState] = useState(true);
+  const [activeModal, setActiveModal] = useState(false);
+  const [modalContent, setModalContent] = useState({});
   const { REACT_APP_WOO_PUBLIC, REACT_APP_WOO_SECRET } = process.env;
   const saveOrders = async (orders, tab) => {
     await deleteAllDataFromTab(tab, "name");
-    console.log({ orders, tab });
     const rowsForExcel = orders.map((order) => ({
       id: `${order.id}`,
       name: _.capitalize(order.orderFirstName),
@@ -29,7 +36,6 @@ export default function GeneralInfo() {
     }));
 
     setTimeout(async () => {
-      console.log("addDataToTab");
       await addDataToTab(rowsForExcel, tab);
     }, 2000);
   };
@@ -50,7 +56,7 @@ export default function GeneralInfo() {
           return response.data;
         })
         .catch(function (error) {
-          console.log(error);
+          console.alert(error);
         });
       return [...(await acc), ...pageOrders];
     }, []);
@@ -65,7 +71,6 @@ export default function GeneralInfo() {
       const orderFirstName = order.billing.first_name;
       const orderLastName = order.billing.last_name;
       const orderEmail = order.billing.email;
-      // const orderItems = order.line_items;
       const rawInfo = order.line_items[0].meta_data.slice(1);
       const info = rawInfo.reduce(
         (acc, options) => {
@@ -160,9 +165,23 @@ export default function GeneralInfo() {
           // disableColumnMenu
           // onCellClick={(e) => test(e)}
           // checkboxSelection
-          // className=".MuiDataGrid-cell--textLeft"
+          onCellClick={(e) => showDetails(e)}
         />
       </div>
+      <section className="workshopsModal">
+        <Modal
+          active={activeModal}
+          title={<h1>DETALLES</h1>}
+          body={<BasicInfoModal content={modalContent} showAllinfo />}
+          closeAction={() => setActiveModal(!activeModal)}
+          actBtn
+          btnName={"Close"}
+          btnAction={() => setActiveModal(!activeModal)}
+          size="medium"
+          border
+          clickOutsideModal={true}
+        />
+      </section>
     </section>
   );
 }

@@ -1,3 +1,48 @@
 .list {
   padding: 1rem 0;
 }
+
+/*******-*****/
+/** Table **/
+/*************/
+
+.workshopsTable .MuiTablePagination-displayedRows {
+  display: none;
+}
+
+/*******-*****/
+/** Modal **/
+/*************/
+.infoContainer {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0.3rem;
+
+  height: 100%;
+  width: 100%;
+}
+.infoContainer h4 {
+  white-space: nowrap;
+}
+
+.infoOption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.infoOption p {
+  flex-grow: 1;
+}
+
+.detailsSections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
