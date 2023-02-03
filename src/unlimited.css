@@ -90,11 +90,11 @@
   color: white;
 }
 
-.MuiDataGrid-root input {
+/* .MuiDataGrid-root input {
   display: none;
   visibility: hidden;
   text-align: center;
-}
+} */
 .MuiDataGrid-cellContent {
   text-align: left;
   font-weight: 200;
@@ -130,14 +130,14 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
 }
 
 .MuiToolbar-root {
-  background-color: black;
+  /* background-color: black; */
 }
 .MuiDataGrid-footerContainer {
   color: blue;
-  background-color: black;
+  /* background-color: black; */
 }
 .dataGridContainer {
-  background-color: black;
+  /* background-color: black; */
 }
 
 .imgFooter {
