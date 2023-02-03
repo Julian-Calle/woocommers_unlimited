@@ -150,3 +150,7 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
   right: -1px;
   top: 2px;
 }
+
+.MuiTablePagination-actions {
+  color: white;
+}
