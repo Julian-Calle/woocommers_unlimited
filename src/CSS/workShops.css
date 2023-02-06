@@ -6,6 +6,15 @@
 /** Table **/
 /*************/
 
+/* .workshopsTable .MuiTablePagination-displayedRows {
+  display: none;
+} */
+
+.MuiTablePagination-root {
+  /* display: none; */
+  width: 100%;
+}
+
 .workshopsTable .MuiTablePagination-displayedRows {
   display: none;
 }

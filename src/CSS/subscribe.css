@@ -40,7 +40,7 @@
   box-sizing: border-box;
 }
 .btn-38 {
-  -webkit-tap-highlight-color: red;
+  -webkit-tap-highlight-color: none;
   -webkit-appearance: button;
   background-color: #000;
   background-image: none;

@@ -132,13 +132,21 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
 .MuiToolbar-root {
   background-color: black;
 }
-.MuiDataGrid-footerContainer {
-  /* color: black; */
-  /* background-color: black; */
+/* .MuiDataGrid-footerContainer { */
+/* color: black; */
+/* background-color: black; */
+/* } */
+/* .dataGridContainer {
+  background-color: yellow;
+} */
+
+.MuiTablePagination-actions {
+  color: white;
 }
-.dataGridContainer {
-  background-color: black;
-}
+
+/**************/
+/*** Imagen ***/
+/**************/
 
 .imgFooter {
   border-radius: 25px;
@@ -149,8 +157,4 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
   position: absolute;
   right: -1px;
   top: 2px;
-}
-
-.MuiTablePagination-actions {
-  color: white;
 }
