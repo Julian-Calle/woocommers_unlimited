@@ -6,17 +6,19 @@
 /** Table **/
 /*************/
 
-/* .workshopsTable .MuiTablePagination-displayedRows {
-  display: none;
-} */
+.workshopsTable .MuiTablePagination-displayedRows {
+  /* display: none; */
+  color: black;
+}
 
 .MuiTablePagination-root {
   /* display: none; */
   width: 100%;
 }
 
-.workshopsTable .MuiTablePagination-displayedRows {
-  display: none;
+.MuiTablePagination-displayedRows {
+  /* display: none; */
+  color: white;
 }
 
 /*******-*****/
