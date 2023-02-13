@@ -4,11 +4,16 @@ import { addDataToTab, getDataFromTab } from "../utils/spreadSheetCalls";
 import { v4 as uuidv4 } from "uuid";
 import { DataGrid } from "@mui/x-data-grid";
 import SubscriptionForm from "../components/SubscriptionForm";
+const { REACT_APP_EXCEL } = process.env;
 
 export function Subscribe() {
   const runUniqueUseEffect = useRef(true);
   const [workshopsOptions, setWorkshopsOptions] = useState({});
   const [loadState, setLoadState] = useState(true);
+
+  const visitLink = () => {
+    window.open(REACT_APP_EXCEL);
+  };
 
   const getWorkshopList = async () => {
     const spreadsheetResponse = await getDataFromTab("options");
@@ -85,6 +90,14 @@ export function Subscribe() {
     <section className="sectionContainer">
       {/* <h1 className="containerTittle">Inscribir</h1> */}
       <SubscriptionForm sendAction={onSubmit} options={workshopsOptions} />
+
+      <button className="btn-38 " onClick={visitLink}>
+        <span className="new"> Clic para ver DB </span>
+        <div className="old">
+          <span>DB</span>
+          <span>DB</span>
+        </div>
+      </button>
       <section className="workshopListSection">
         <div className="dataGridWorkshop">
           <h2>BLOQUE 1</h2>
