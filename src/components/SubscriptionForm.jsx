@@ -38,7 +38,9 @@ export default function SubscriptionForm({ sendAction, options }) {
           )}
         </div>
         <div className="inputContainer">
-          <label htmlFor="email">Correo</label>
+          <label type="email" htmlFor="email">
+            Correo
+          </label>
           <input
             placeholder="    Correo"
             {...register("email", { required: true })}
