@@ -13,6 +13,7 @@ import ShowTNotLogged from "./guards/ShowTNotLogged";
 import footer from "./assets/footer.png";
 import unlimitedLogo from "./assets/unlimitedLogo.png";
 import WorkShopsMap from "./pages/WorkShopsMap";
+import Schedule from "./pages/Schedule";
 
 export default function Unlimited() {
   const { signOut, signIn } = useAuth();
@@ -24,6 +25,9 @@ export default function Unlimited() {
         </NavLink>
         <NavLink className="links" exact="true" to="/map">
           Mapa
+        </NavLink>
+        <NavLink className="links" exact="true" to="/schedule">
+          Horario
         </NavLink>
         <ShowToAdmin>
           <NavLink exact="true" to="/details">
@@ -56,6 +60,7 @@ export default function Unlimited() {
           </Route>
           <Route exact="true" path="/" element={<WorkShops />} />
           <Route exact="true" path="/map" element={<WorkShopsMap />} />
+          <Route exact="true" path="/Schedule" element={<Schedule />} />
           <Route exact="true" path="/login" element={<Login />} />
         </Routes>
       </section>
