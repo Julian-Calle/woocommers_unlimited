@@ -60,10 +60,9 @@ export default function SubscriptionForm({ sendAction, options }) {
               Selecciona
             </option>
             <option value="0">0</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
+            <option value="12">12</option>
+            <option value="8">8</option>
             <option value="20">20</option>
-            <option value="25">25</option>
           </select>
           {errors.payment && (
             <span className="formError">Cantidad es obligatorio</span>
