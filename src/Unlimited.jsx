@@ -10,8 +10,8 @@ import AdminRoute from "./guards/AdminRoute";
 import useAuth from "./hooks/useAuth";
 import ShowToAdmin from "./guards/ShowToAdmin";
 import ShowTNotLogged from "./guards/ShowTNotLogged";
-import footer from "./assets/footer.png";
-import unlimitedLogo from "./assets/unlimitedLogo.png";
+import footer from "./assets/UNL24LOGO.png";
+import unlimitedLogo from "./assets/logo2.png";
 import WorkShopsMap from "./pages/WorkShopsMap";
 import Schedule from "./pages/Schedule";
 

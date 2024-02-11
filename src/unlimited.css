@@ -20,7 +20,7 @@
 .App {
   text-align: center;
   /* background-color: #282c34; */
-  background-color: #1264da;
+  background-color: #9f9da5;
   height: 100vh;
   min-height: 100vh;
   display: flex;
@@ -157,4 +157,6 @@ div.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
   position: absolute;
   right: -1px;
   top: 2px;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
