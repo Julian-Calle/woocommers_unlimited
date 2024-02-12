@@ -1,5 +1,5 @@
 import React from "react";
-import map from "../assets/map.png";
+import map from "../assets/map24.jpeg";
 import "../CSS/workshopsMap.css";
 
 export default function WorkShopsMap() {
